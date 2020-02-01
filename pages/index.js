@@ -202,6 +202,10 @@ const Home = ({ posts }) => (
               margin-left:10%;
               margin-right:10%;
             }
+            .hero-title {
+              font-size: 40px;
+              margin: 0px;
+            }
           }
           .text-link2:hover {
             font-weight:bold;

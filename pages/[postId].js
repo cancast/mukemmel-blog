@@ -122,6 +122,12 @@ const BlogPost = ({ post }) => (
         margin-bottom: 10px;
         min-width:40%;
       }
+      @media screen and (max-width: 640px) {
+        .hero-title {
+          font-size: 40px;
+          margin: 0px;
+        }
+      }
     `}</style>
   </div>
 );
