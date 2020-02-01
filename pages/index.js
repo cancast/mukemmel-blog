@@ -122,7 +122,7 @@ const Home = ({ posts }) => (
           .box-top{
             width:100%;
             height:50px;
-            min-height:60px;
+            min-height:80px;
             background-color:#524c4c;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
           }
@@ -218,7 +218,7 @@ const Home = ({ posts }) => (
 );
 
 Home.getInitialProps = async ({ req }) => {
-  const res = await fetch("http://localhost:3000/api/posts");
+  const res = await fetch("https://mukemmelbirblog.herokuapp.com/api/posts");
   const json = await res.json();
   return { posts: json.posts };
 };
