@@ -11,6 +11,16 @@ const Home = ({ posts }) => (
           <title>Home</title>
           <link rel="icon" href="/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157519632-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-157519632-1');
+          </script>
+
         </Head>
 
         <div className="hero">
