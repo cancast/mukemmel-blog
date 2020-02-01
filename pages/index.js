@@ -198,7 +198,7 @@ const Home = ({ posts }) => (
           }
           @media screen and (max-width: 640px) {
             .readmoretext {
-              font-size:20px;
+              font-size:16px;
               margin-left:10%;
               margin-right:10%;
             }
@@ -218,7 +218,7 @@ const Home = ({ posts }) => (
 );
 
 Home.getInitialProps = async ({ req }) => {
-  const res = await fetch("https://mukemmelbirblog.herokuapp.com/api/posts");
+  const res = await fetch("http://localhost:3000/api/posts");
   const json = await res.json();
   return { posts: json.posts };
 };
